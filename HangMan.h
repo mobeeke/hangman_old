@@ -11,14 +11,14 @@
 #include <vector>
 
 class HangMan {
-public:
+public:                                         //creates public strings and variables in class HangMan
    HangMan(Man mn, int difficulty);
   void displayPlatform();
   std::string getSecretWord();
   void guess(char guess);
   bool victory();
-    
-private:
+      
+private:                                        //creates private objects,strings,pointers,vectors, and functions
     Man man;
     std::string secretWord;
     bool* foundChars;
