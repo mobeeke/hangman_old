@@ -1,12 +1,10 @@
-//
-// Created by zbb on 11/20/15.
-//
+
 
 #ifndef HANGMAN_MAN_H
 #define HANGMAN_MAN_H
 
 class Man {
-public:
+public:                                 //creates public functions in class Man
     Man();
     bool checkHead() const;
     bool checkTorso() const;
@@ -22,7 +20,7 @@ public:
     void setLArm();
     void setRLeg();
     void setLLeg();
-private:
+private:                                //creates private pointer
     bool* bodyParts;
 
 };
